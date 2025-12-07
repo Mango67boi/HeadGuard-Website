@@ -85,6 +85,18 @@
             color: #F2F2F2;
         }
 
+        .health-disclaimer {
+            background: rgba(255, 77, 77, 0.1);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 77, 77, 0.3);
+            margin: 24px 0;
+        }
+
+        .health-disclaimer p {
+            color: #F2F2F2;
+        }
+
         a {
             color: #FFAB00;
             text-decoration: none;
@@ -145,10 +157,16 @@
     <div class="container">
         <h1>Privacy Policy</h1>
         <p class="date"><strong>Effective Date:</strong> December 6, 2025</p>
-        <p class="date"><strong>Last Updated:</strong> December 6, 2025</p>
+        <p class="date"><strong>Last Updated:</strong> December 7, 2025</p>
 
         <div class="highlight">
             <p><strong>Privacy-First Promise:</strong> NeckGuard is designed with your privacy as the top priority. All your posture tracking data stays on your device. We don't collect, store, or share any personal information.</p>
+        </div>
+
+        <div class="health-disclaimer">
+            <h2 style="margin-top: 0; color: #FF4D4D;">⚕️ Health & Wellness Disclaimer</h2>
+            <p><strong>Important:</strong> NeckGuard is designed as a wellness and posture awareness tool. It is <strong>NOT a medical device</strong> and is not intended to diagnose, treat, cure, or prevent any medical condition or disease. Posture data is processed locally on your device for awareness purposes only.</p>
+            <p>If you have any health concerns, neck pain, or posture-related medical issues, please consult a qualified healthcare professional. NeckGuard should not be used as a substitute for professional medical advice, diagnosis, or treatment.</p>
         </div>
 
         <h2>1. Information We Collect</h2>
@@ -209,7 +227,17 @@
             <p><strong>Important:</strong> All this data is automatically and permanently deleted when you uninstall the app. We cannot recover it because it never leaves your device.</p>
         </div>
 
-        <h2>5. Camera and Motion Sensor Usage</h2>
+        <h2>5. Data Retention</h2>
+        <p>NeckGuard follows a strict local-only data retention policy:</p>
+        <ul>
+            <li><strong>Authentication Tokens:</strong> Stored locally in iOS Keychain and persist until you sign out or delete the app</li>
+            <li><strong>User Session Data:</strong> Maintained in secure local storage until you sign out</li>
+            <li><strong>Posture Tracking Data:</strong> All angles, session times, and statistics are stored locally in your device's app storage and never transmitted to servers</li>
+            <li><strong>App Settings:</strong> Saved locally in UserDefaults and persist until app deletion</li>
+            <li><strong>Permanent Deletion:</strong> All data is permanently and irreversibly deleted when you uninstall the app from your device</li>
+        </ul>
+
+        <h2>6. Camera and Motion Sensor Usage</h2>
 
         <h3>Camera</h3>
         <ul>
@@ -236,7 +264,34 @@
             <li>Used solely for measuring head orientation angles</li>
         </ul>
 
-        <h2>6. Data Sharing</h2>
+        <h2>7. App Tracking Transparency</h2>
+        <div class="highlight">
+            <p><strong>No Cross-App Tracking:</strong> NeckGuard does NOT track your activity across other companies' apps or websites. We do not collect or share data for advertising, marketing, or behavioral tracking purposes.</p>
+        </div>
+        <p>Privacy commitments:</p>
+        <ul>
+            <li>We do not request the App Tracking Transparency (ATT) permission</li>
+            <li>We do not use tracking identifiers (IDFA, etc.)</li>
+            <li>We do not share data with advertising networks or data brokers</li>
+            <li>All tracking and privacy settings in iOS remain under your complete control</li>
+            <li>Your usage of NeckGuard is not monitored or tracked for any purpose</li>
+        </ul>
+
+        <h2>8. Analytics & Third-Party SDKs</h2>
+        <div class="section-highlight">
+            <p><strong>Zero Analytics Tracking:</strong> NeckGuard does not use analytics SDKs, advertising SDKs, or third-party tracking tools of any kind.</p>
+        </div>
+        <p>Technical details:</p>
+        <ul>
+            <li><strong>Firebase Analytics:</strong> Explicitly disabled in our implementation</li>
+            <li><strong>Google Sign-In:</strong> Used only for authentication, not for tracking or analytics</li>
+            <li><strong>No Crash Reporting:</strong> We do not use third-party crash reporting services</li>
+            <li><strong>No Behavior Tracking:</strong> Your in-app behavior is not monitored or logged</li>
+            <li><strong>No Attribution Tracking:</strong> We do not track where you downloaded the app from</li>
+            <li><strong>Local-Only Processing:</strong> All app functionality operates without requiring network calls or data transmission</li>
+        </ul>
+
+        <h2>9. Data Sharing</h2>
         <div class="highlight">
             <p><strong>We do NOT share, sell, rent, or transmit your data to anyone. Ever.</strong></p>
         </div>
@@ -250,10 +305,10 @@
             <li>Is never sold or monetized in any way</li>
         </ul>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>10. Children's Privacy</h2>
         <p>NeckGuard does not knowingly collect personal information from children under 13 years of age. The app is designed for general audiences. If you believe we have inadvertently collected information from a child under 13, please contact us immediately.</p>
 
-        <h2>8. Your Privacy Rights</h2>
+        <h2>11. Your Privacy Rights</h2>
         <p>You have complete control over your data:</p>
         <ul>
             <li><strong>Access:</strong> All your data is stored locally on your device in the app's storage</li>
@@ -263,7 +318,7 @@
             <li><strong>Account Deletion:</strong> Sign out to remove authentication data</li>
         </ul>
 
-        <h2>9. Security Measures</h2>
+        <h2>12. Security Measures</h2>
         <p>We implement industry-standard security practices:</p>
         <ul>
             <li>All network communications use secure HTTPS/TLS encryption</li>
@@ -273,21 +328,39 @@
             <li>Regular security updates and patches</li>
         </ul>
 
-        <h2>10. International Data Transfers</h2>
+        <h2>13. International Data Transfers</h2>
         <p>Since all posture tracking data stays on your device, there are no international data transfers. Authentication data handled by Google/Firebase follows their respective data transfer policies.</p>
 
-        <h2>11. Changes to This Privacy Policy</h2>
+        <h2>14. App Store Privacy Nutrition Label</h2>
+        <p>In accordance with Apple App Store requirements, NeckGuard's Privacy Nutrition Label indicates:</p>
+        <div class="section-highlight">
+            <ul>
+                <li><strong>Data Not Collected:</strong> We do not collect any personal data for our own use</li>
+                <li><strong>Data Not Used to Track You:</strong> We do not track you across apps and websites owned by other companies</li>
+                <li><strong>Data Not Linked to You:</strong> Authentication is optional and processed by third parties (Firebase, Google)</li>
+                <li><strong>Local Processing Only:</strong> All posture tracking happens on your device</li>
+            </ul>
+        </div>
+        <p>For complete transparency, here's what the App Store Privacy Label shows:</p>
+        <ul>
+            <li><strong>Data Used to Track You:</strong> None</li>
+            <li><strong>Data Linked to You:</strong> None (authentication is handled by third parties)</li>
+            <li><strong>Data Not Linked to You:</strong> None</li>
+        </ul>
+
+        <h2>15. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-        <h2>12. Contact Us</h2>
+        <h2>16. Contact Us</h2>
         <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
 
         <div class="section-highlight">
             <p><strong>Email:</strong> <a href="mailto:lilkiwwimail@gmail.com">lilkiwwimail@gmail.com</a></p>
             <p><strong>Response Time:</strong> Within 24-48 hours</p>
+            <p><strong>Support Page:</strong> <a href="https://mango67boi.github.io/HeadGuard-Website/Support.html" target="_blank">Support & FAQ</a></p>
         </div>
 
-        <h2>13. California Privacy Rights (CCPA)</h2>
+        <h2>17. California Privacy Rights (CCPA)</h2>
         <p>California residents have specific rights under the California Consumer Privacy Act:</p>
         <ul>
             <li>Right to know what personal information is collected</li>
@@ -296,7 +369,7 @@
         </ul>
         <p><strong>Note:</strong> NeckGuard does not sell personal information and collects minimal data that stays on your device.</p>
 
-        <h2>14. GDPR Compliance (EU Users)</h2>
+        <h2>18. GDPR Compliance (EU Users)</h2>
         <p>For users in the European Union, we comply with GDPR requirements:</p>
         <ul>
             <li><strong>Legal Basis:</strong> Processing based on your consent and legitimate interests</li>
@@ -309,6 +382,11 @@
             <p><strong>Bottom Line:</strong> Your privacy matters. NeckGuard is built to keep your posture data completely private and secure on your device. We believe in transparency, security, and giving you full control over your information.</p>
         </div>
 
+        <div class="health-disclaimer" style="margin-top: 40px;">
+            <h2 style="margin-top: 0; color: #FF4D4D;">🏥 Medical Disclaimer</h2>
+            <p><strong>This is a wellness tool, not medical advice.</strong> NeckGuard provides posture awareness and tracking for wellness purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+            <p>Never disregard professional medical advice or delay in seeking it because of something you have seen or tracked with NeckGuard.</p>
+        </div>
 
     </div>
 </body>
